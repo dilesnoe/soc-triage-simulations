@@ -13,6 +13,7 @@
 - Malicious service AgentUpdate installed on WS-21
 
 **T3 – Credential Access**
+- agent.exe accessed LSA on WS-21 (Event IDs 4656 / 4663)
 - LSA accessed, credentials dumped
 
 **T4 – Lateral Movement**
