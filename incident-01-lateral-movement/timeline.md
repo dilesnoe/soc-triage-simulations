@@ -27,3 +27,4 @@
 
 **T6 – Command and Control**
 - Outbound connections to multiple external IPs
+- Traffic consistent with active C2 beaconing
