@@ -58,4 +58,6 @@ This work is based on:
 
 ## 📖 How to Review
 Start with `raw-logs.txt`, then review `analyst-triage.md`, and finally `timeline.md` to see how raw telemetry was converted into a confirmed incident assessment.
+This mirrors a Tier-2 SOC workflow: alert review → investigation → escalation-ready documentation.
+
 
