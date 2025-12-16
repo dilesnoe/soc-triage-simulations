@@ -1,5 +1,7 @@
 # Soc-Triage-Simulations
 SOC Tier-2 style incident triage simulations using Windows, SIEM-style logs, and cloud security events.
+Each incident includes raw logs, analyst triage, and a reconstructed attack timeline.
+
 # SOC Analyst Incident Triage Portfolio
 
 This repository demonstrates my ability to perform real-world SOC triage, 
@@ -51,3 +53,7 @@ This work is based on:
 ├── raw-logs.txt
 ├── analyst-triage.md
 └── timeline.md
+
+## 📖 How to Review
+Start with `raw-logs.txt`, then review `analyst-triage.md`, and finally `timeline.md` to see how raw telemetry was converted into a confirmed incident assessment.
+
