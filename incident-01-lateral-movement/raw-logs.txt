@@ -1,3 +1,7 @@
+# Extracted SIEM telemetry supporting Incident 01 analysis
+# Includes Windows Security and Sysmon events relevant to triage
+
+
 2025-02-14T03:11:42Z HOST=WS-21 EVENTID=4624
 Account=a.chen LogonType=2 AuthenticationPackage=Negotiate
 
