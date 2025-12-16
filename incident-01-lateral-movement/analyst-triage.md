@@ -6,6 +6,10 @@ Multi-host lateral movement originating from WS-21, spreading to WS-22 and DC-01
 ## Severity
 Critical
 
+## Scope / Impact
+- Affected hosts: WS-21, WS-22, DC-01
+- Affected accounts: a.chen, helpdesk.admin
+
 ## Initial Detection
 Alert triggered by suspicious PowerShell execution and NTLM authentication anomalies.
 
