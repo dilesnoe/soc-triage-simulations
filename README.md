@@ -1,6 +1,8 @@
 # Soc-Triage-Simulations
 SOC Tier-2 style incident triage simulations using Windows, SIEM-style logs, and cloud security events.
 Each incident includes raw logs, analyst triage, and a reconstructed attack timeline.
+> All incidents were manually analyzed without pre-labeled alerts to simulate real SOC conditions.
+
 
 # SOC Analyst Incident Triage Portfolio
 
