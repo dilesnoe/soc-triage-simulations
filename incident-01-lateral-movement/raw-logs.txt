@@ -1,0 +1,6 @@
+RAW SIEM LOGS
+-------------
+Windows Security, Sysmon, and network telemetry
+used for SOC triage simulation.
+
+Add raw logs for Incident 01 lateral movement
