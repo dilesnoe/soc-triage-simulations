@@ -37,28 +37,7 @@ This work is based on:
 
 ---
 
-## 📁 Incident Simulations
 
-### Incident 1: Multi-Host Lateral Movement (WS → WS → DC)
-**Severity:** Critical  
-
-**Techniques Observed:**
-- Initial access via credential reuse
-- PowerShell obfuscation
-- Service-based persistence
-- Credential dumping
-- Lateral movement via NTLM
-- Domain privilege escalation
-
-➡️ Full triage write-up below.
-
-#### 📂 Incident Files
-
-```text
-/incident-01-lateral-movement
-├── raw-logs.txt
-├── analyst-triage.md
-└── timeline.md
 
 
 
