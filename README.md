@@ -60,7 +60,6 @@ from raw telemetry → investigation → documented escalation.
 ➡️ Full triage write-up available in the incident folder.
 
  
-
 ### 🟠 Incident 2: Failed Lateral Movement Attempt (WS-18 → WS-25)
 **Severity:** Medium
 
@@ -70,7 +69,6 @@ from raw telemetry → investigation → documented escalation.
 - Cross-host authentication using multiple accounts
 - Process execution via net.exe
 - Blocked lateral movement attempt
-- Domain-level privilege escalation attempt
 
 
 ➡️ Full triage write-up available in the incident folder.
