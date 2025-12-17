@@ -56,6 +56,7 @@ This work is based on:
 ├── analyst-triage.md
 └── timeline.md
 
+
 ### Incident 2: Failed Lateral Movement Attempt
 **Severity:** Medium  
 **Outcome:** Attempted lateral movement blocked  
