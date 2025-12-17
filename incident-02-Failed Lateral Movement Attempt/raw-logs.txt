@@ -1,3 +1,6 @@
+# Extracted SIEM telemetry supporting Incident 02 analysis
+# Includes Windows Security events related to authentication and share access
+
 2025-03-09T02:11:14Z HOST=WS-18 EVENTID=4624
 Account=temp.admin LogonType=2 AuthenticationPackage=Kerberos
 
@@ -13,4 +16,5 @@ ParentProcess=cmd.exe User=temp.admin
 
 2025-03-09T02:12:44Z HOST=WS-18 EVENTID=4625
 Account=administrator LogonType=3 Status=0xC000006D SourceIP=10.0.5.25
+
 
