@@ -1,1 +1,16 @@
-Placeholder
+2025-03-09T02:11:14Z HOST=WS-18 EVENTID=4624
+Account=temp.admin LogonType=2 AuthenticationPackage=Kerberos
+
+2025-03-09T02:12:02Z HOST=WS-25 EVENTID=4625
+Account=temp.admin LogonType=3 Status=0xC000006A SourceIP=10.0.5.18
+
+2025-03-09T02:12:06Z HOST=WS-25 EVENTID=5145
+ShareName=\\WS-25\ADMIN$ Account=temp.admin AccessMask=0x0
+
+2025-03-09T02:12:19Z HOST=WS-25 EVENTID=4688
+NewProcessName=C:\Windows\System32\net.exe
+ParentProcess=cmd.exe User=temp.admin
+
+2025-03-09T02:12:44Z HOST=WS-18 EVENTID=4625
+Account=administrator LogonType=3 Status=0xC000006D SourceIP=10.0.5.25
+
