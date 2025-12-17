@@ -82,7 +82,7 @@ from raw telemetry → investigation → documented escalation.
 ├── analyst-triage.md
 └── timeline.md
 
-/incident-02-Failed Lateral Movement
+/incident-02-Failed Lateral Movement Attempt
 ├── raw-logs.txt
 ├── analyst-triage.md
 └── timeline.md
