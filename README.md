@@ -1,13 +1,16 @@
 # Soc-Triage-Simulations
-SOC Tier-2 style incident triage simulations using Windows, SIEM-style logs, and cloud security events.
+
+SOC Tier-2 style incident triage simulations using Windows, SIEM-style logs, and cloud security events.  
 Each incident includes raw logs, analyst triage, and a reconstructed attack timeline.
+
 > All incidents were manually analyzed without pre-labeled alerts to simulate real SOC conditions.
 
+---
 
 # SOC Analyst Incident Triage Portfolio
 
-This repository demonstrates my ability to perform real-world SOC triage, 
-incident analysis, and attack-chain reconstruction using Windows, Active Directory,
+This repository demonstrates my ability to perform real-world SOC triage,  
+incident analysis, and attack-chain reconstruction using Windows, Active Directory,  
 SIEM-style logs, and cloud-style security events.
 
 This work is based on:
@@ -38,13 +41,14 @@ This work is based on:
 
 ### Incident 1: Multi-Host Lateral Movement (WS → WS → DC)
 **Severity:** Critical  
-**Techniques Observed:**  
-- Initial access via credential reuse  
-- PowerShell obfuscation  
-- Service-based persistence  
-- Credential dumping  
-- Lateral movement via NTLM  
-- Domain privilege escalation  
+
+**Techniques Observed:**
+- Initial access via credential reuse
+- PowerShell obfuscation
+- Service-based persistence
+- Credential dumping
+- Lateral movement via NTLM
+- Domain privilege escalation
 
 ➡️ Full triage write-up below.
 
@@ -56,25 +60,6 @@ This work is based on:
 ├── analyst-triage.md
 └── timeline.md
 
-
-### Incident 2: Failed Lateral Movement Attempt
-**Severity:** Medium  
-**Outcome:** Attempted lateral movement blocked  
-
-**Techniques Observed:**  
-- NTLM network authentication failures  
-- Administrative share access attempts (ADMIN$)  
-- Process execution (`net.exe`) without successful authentication  
-
-➡️ Full triage write-up below.
-
-#### 📂 Incident Files
-
-```text
-/incident-02-failed-lateral-movement
-├── raw-logs.txt
-├── analyst-triage.md
-└── timeline.md
 
 
 ## 📖 How to Review
