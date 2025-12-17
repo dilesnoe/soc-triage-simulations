@@ -56,6 +56,26 @@ This work is based on:
 ├── analyst-triage.md
 └── timeline.md
 
+### Incident 2: Failed Lateral Movement Attempt
+**Severity:** Medium  
+**Outcome:** Attempted lateral movement blocked  
+
+**Techniques Observed:**  
+- NTLM network authentication failures  
+- Administrative share access attempts (ADMIN$)  
+- Process execution (`net.exe`) without successful authentication  
+
+➡️ Full triage write-up below.
+
+#### 📂 Incident Files
+
+```text
+/incident-02-failed-lateral-movement
+├── raw-logs.txt
+├── analyst-triage.md
+└── timeline.md
+
+
 ## 📖 How to Review
 Start with `raw-logs.txt`, then review `analyst-triage.md`, and finally `timeline.md` to see how raw telemetry was converted into a confirmed incident assessment.
 This mirrors a Tier-2 SOC workflow: alert review → investigation → escalation-ready documentation.
