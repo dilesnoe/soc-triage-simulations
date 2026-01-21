@@ -1,4 +1,4 @@
-# Incident 02 – Failed Lateral Movement Attempt
+# Incident 02 – Analyst Triage Report
 
 ## Summary
 Investigation identified attempted lateral movement between two workstations using administrative credentials. All network authentication and administrative share access attempts failed, and no evidence of host compromise or credential access was observed.
