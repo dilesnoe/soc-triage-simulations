@@ -1,7 +1,8 @@
 # SOC Triage Simulations
 
-**SOC Tier-2 style incident triage simulations** using Windows, SIEM-style telemetry,  
-and cloud-inspired security events.
+SOC Tier-2 style incident triage simulations using Windows, SIEM-style telemetry, and cloud-inspired security events.
+
+**This repository demonstrates SOC Tier-2 incident triage capability for remote SOC roles, including investigation, escalation, and documentation.**
 
 Each incident includes:
 - Raw security logs
@@ -14,13 +15,15 @@ Each incident includes:
 
 ## 🧭 SOC Analyst Incident Triage Portfolio
 
-This repository demonstrates my ability to perform **real-world SOC triage**,  
-incident analysis, and **attack-chain reconstruction** across Windows and Active Directory environments.
+This repository demonstrates my ability to perform real-world SOC triage, incident analysis, and attack-chain reconstruction across Windows and Active Directory environments.
 
-The work reflects how incidents are handled in a production SOC:  
-from raw telemetry → investigation → documented escalation.
+The work reflects how incidents are handled in a production SOC:
+**raw telemetry → investigation → escalation-ready documentation**
 
-### Lab Environment
+---
+
+## 🧪 Lab Environment
+
 - Self-built virtual lab (VirtualBox)
 - Windows Server (Active Directory / Domain Controller)
 - Windows workstation endpoints
@@ -32,13 +35,14 @@ from raw telemetry → investigation → documented escalation.
 ## 🔐 Skills Demonstrated
 
 - Authentication analysis (NTLM, Kerberos, logon types)
+- Privilege and elevated access validation (e.g., 4672)
 - PowerShell abuse detection
 - Malware staging and persistence identification
 - Credential dumping indicators (LSA / SAM)
 - Lateral movement analysis (WS → WS → DC)
 - Privilege escalation detection
-- Command-and-Control (C2) vs data exfiltration
-- Cloud and on-prem log correlation
+- Command-and-Control (C2) vs data exfiltration reasoning
+- Cloud and on-prem log correlation (principles)
 - Incident severity classification
 - SOC Tier-2 style escalation documentation
 
@@ -59,7 +63,8 @@ from raw telemetry → investigation → documented escalation.
 
 ➡️ Full triage write-up available in the incident folder.
 
- 
+---
+
 ### 🟠 Incident 2: Failed Lateral Movement Attempt (WS-18 → WS-25)
 **Severity:** Medium
 
@@ -67,13 +72,15 @@ from raw telemetry → investigation → documented escalation.
 - Failed NTLM authentication attempts
 - Attempted ADMIN$ share access
 - Cross-host authentication using multiple accounts
-- Process execution via net.exe
+- Process execution via `net.exe`
 - Blocked lateral movement attempt
-
 
 ➡️ Full triage write-up available in the incident folder.
 
-#### 📂 Incident Files
+---
+
+## 📂 Incident Files
+
 ```text
 /incident-01-lateral-movement
 ├── raw-logs.txt
@@ -84,6 +91,7 @@ from raw telemetry → investigation → documented escalation.
 ├── raw-logs.txt
 ├── analyst-triage.md
 └── timeline.md
+
 ```
 
 
